@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/video.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+  <div class="logo">
+      <img src="../../assets/logo.png" onclick="FC_ContentsCall('Menu')">
+    </div>
+</header>
+<nav>
+  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Menu')">
+</nav>
+  <section class="main-content">
+    <div class="wrap" style="text-align: center;">
+      
+      <div class="products-box">
+        <div class="col-sm-12 product-box" style="" onclick="ShowPopup('videos/MuPrime.mp4')">
+          <img src="images/thumb1.png">
+          
+        </div>
+        <div class="col-sm-12 product-box">
+          <h2 class="video-title">New Story Demo</h2>
+        </div>
+      </div>
+
+      <div class="products-box">
+        <div class="col-sm-12 product-box" onclick="ShowPopup('videos/MuScreen.mp4')">
+          <img src="images/thumb2.png">
+          </div>
+        <div class="col-sm-12 product-box">
+          <h2 class="video-title">Ending the Cycle of Mistrust</h2>
+        </div>
+      </div>
+
+      <div class="products-box">
+        <div class="col-sm-12 product-box" onclick="ShowPopup('videos/PDX .mp4')">
+          <img src="images/thumb3.png">
+          </div>
+        <div class="col-sm-12 product-box">
+          <h2 class="video-title">Mercy Housing Testimonial</h2>
+        </div>
+        </div>
+      <div class="products-box">
+        <div class="col-sm-12 product-box" onclick="ShowPopup('videos/Syngeneic.mp4')">
+          <img src="images/thumb4.png">
+          </div>
+        <div class="col-sm-12 product-box">
+          <h2 class="video-title">Fairfield Residential Testimonial</h2>
+        </div>
+      </div>
+      <!--<div class="products-box">
+        <div class="col-sm-6 product-box" style="" onclick="ShowPopup('videos/8524 UGM PHM_Andrew Foss r1.mp4')">
+          <img src="images/POPHEALTH-BUTTON.png">
+        </div>
+
+        <div class="col-sm-6 product-box" onclick="ShowPopup('videos/8524 UGM Hosting_Brandon Brosi r1.mp4')">
+          <img src="images/HOSTING-BUTTON.png">
+        </div>
+      </div>-->
+      
+    </div>
+  </section>
+
+
+<div id="dialog-overlay1"></div>
+      <div id="dialog-box1"><a class="btn-ok">Close</a>
+        <div id="dialog-content1">
+            <div id="dialog-message"><video id="myVideo" width="800" height="540" nocontrols><source src="" type="video/mp4">Your browser does not support the video tag.</video> </div>
+        </div>
+        <img src="images/play.png" id="playPause" onclick="vidplay()">
+
+      </div>
+</body>
+
+
+<script language="JavaScript" type="text/javascript" src="js/video.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    //window.history.forward();
+</script>
+
+
+
+</html>
