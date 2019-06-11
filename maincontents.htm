@@ -93,7 +93,7 @@
   </header>
 
   <section class="main-content">
-    <img src="assets/home_screen.png" onclick="location.href='menu.html'">
+    <img src="assets/home_screen.png" onclick="location.href='menu.html'" width="1080">
 <!--    <h1 class="welcome-text">TAP ON THE SCREEN</br>TO BEGIN</h1>
     <img src="assets/icons/qr-code-1.png" style="position: relative;top: 460px;left: 670px;width: 355px;">
 -->
@@ -234,7 +234,7 @@
   .main-content {
     height: 1400px;
     margin-top: 0;
-    padding-top: 100px;
+    padding-top: 10px;
 /*    background-image: url(assets/home-bg.png);*/
   background-size: 1080px;
   background-position:  0 -200px;
@@ -287,14 +287,14 @@ header .logo img {
 
                     var dataString = {'ScanCode': scancode};
                         $.ajax({
-                            url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
+                            url: "https://robotaisolutions.com/BadgeScanning/interstateRestoration.php",
                             type: "post",
                             data: dataString,
 
                             success: function (data) {
                                 console.log(data);
                                 if (data.response === 'success') {
-                                    alert("Welcome" + data.fname + "" + data.lname)
+                                    PlaySpeech("Welcome" + data.fname + " " + data.lname)
                                     //alert(scancode);
                                     barcode = "";
                                     array = null;

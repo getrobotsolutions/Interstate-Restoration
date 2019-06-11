@@ -43,7 +43,7 @@ audio {
 }
 
 #mainwrap {
-    background-color: #ff5757;
+    background-color: #ed1a39;
     padding: 30px 0 0 0;
 }
 
@@ -53,10 +53,10 @@ audio {
 #plwrap {
     margin-top:25px;
     padding: 10px 0;
-    background-color: #a8a8a8;
+    background-color: #004990;
 }
 #plList{
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0px;
 }
 
 #tracks {
@@ -87,10 +87,10 @@ audio {
     margin:0;
     padding:21px;
 
-    width: 97%;
-    background-color: #a8a8a8;
-    border: 10px solid #ff914c;
-    margin: 10px;
+    width: 100%;
+    background-color: #004990;
+    border: 1px solid #ffff;
+    margin: 10px 0;
 }
 
 #plList li:hover {
@@ -100,7 +100,7 @@ audio {
 
 .plItem {
     position:relative;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
 }
 
