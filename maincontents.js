@@ -58,7 +58,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             break;
         case "Selfie":
             PlaySpeech(speak[5]);
-            location.href = "Contents/G_Selfie/index.html";
+            location.href = "Contents/Selfie/index.html";
             break;
         
         
