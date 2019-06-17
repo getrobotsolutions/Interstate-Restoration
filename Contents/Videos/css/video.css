@@ -133,14 +133,15 @@ a.button:hover {
     float: left;
 }
 #playPause{
-      width: 80px;
-    margin-left: 360px;
+  width: 80px;
+  margin-left: 360px;
 }
 
 .video-title{
-      font-size: 60px;
-    color: white;
-    font-weight: bold;
-    width: 419px;
-    margin-top: 57px;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  width: 419px;
+  margin-top: 57px;
+  text-align: left;
 }

@@ -11,12 +11,13 @@
         jokes[9]="Want to know my favorite dance? It’s the robot";
 
         var speak = new Array( );
-        speak[0] = "";
-        speak[1] = "Click on the video to see more.";
-        speak[2] = "Record a video message and CrownBio will get back to you.";
-        speak[3] = "Take-A-Picture with me";
-        speak[4] = "";
-        speak[5] = "Spin my wheel to make me dance!";
+        speak[0] = "Read the below list to find out more about what we offer";
+        speak[1] = "Press a button to watch a video and learn more";
+        speak[2] = "Take a picture and become the robot";
+        speak[3] = "Pick a song and lets boogy";
+        speak[4] = "Spin my wheel for a chance to win";
+        
+        speak[5] = "Take a picture and share it";
 
 //window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -36,29 +37,31 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../menu.html"; 
             break;
         case "Services":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[0]);
             location.href = "Contents/Services/index.html";
             break;
         case "Videos":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Videos/index.html";
             break;
-        case "Slotmachine":
-            //PlaySpeech(speak[5]);
-            location.href = "Contents/Slotmachine/index.html";
-            break;
-        case "Selfie":
-            //PlaySpeech(speak[3]);
-            location.href = "Contents/G_Selfie/index.html";
-            break;
         case "Avatar":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
         case "Dance":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[3]);
             location.href = "Contents/Dance/index.html";
             break;
+        case "Slotmachine":
+            PlaySpeech(speak[4]);
+            location.href = "Contents/Slotmachine/index.html";
+            break;
+        case "Selfie":
+            PlaySpeech(speak[5]);
+            location.href = "Contents/G_Selfie/index.html";
+            break;
+        
+        
         case "Config":
             if(conf_count === 5)
             {
@@ -144,25 +147,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("You look nice, I like you, please tap my screen to begin.");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Welcome to Interstate Restoration");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Come take a picture with me.");
+        window.external.PlaySpeech("Scan your badge to begin.");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Check out my app to learn more about Crown bio.");
+            window.external.PlaySpeech("Take a picture with me");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-       window.external.PlaySpeech("Ask me a question?");
+       window.external.PlaySpeech("Check out my videos to learn more");
         
     }
     if(btn_info[4] == '1'){
