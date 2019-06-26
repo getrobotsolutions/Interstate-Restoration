@@ -280,6 +280,7 @@ header .logo img {
                         //var lname = array[3].toString().toLowerCase();
                         var array = barcode.split("ü");
                         var scancode = array[0].toString().toLowerCase();
+                        alert(scancode);
 
                        
 
@@ -294,7 +295,7 @@ header .logo img {
                             success: function (data) {
                                 console.log(data);
                                 if (data.response === 'success') {
-                                    PlaySpeech("Welcome" + data.fname + " " + data.lname)
+                                    PlaySpeech("Welcome" + data.fname + " " + data.lname);
                                     //alert(scancode);
                                     barcode = "";
                                     array = null;
