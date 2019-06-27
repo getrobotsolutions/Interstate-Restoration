@@ -271,22 +271,22 @@ header .logo img {
                     if (code === 16) {
 
                         flag = false;
-                        //alert(barcode);
+                        alert(barcode);
                         //barcode = barcode.split('').join('');
                         //var array = barcode.split("Ü");
                         //var scancode = array[0].toString().toLowerCase();
                         //var bnumber = array[1].toString().toLowerCase();
                         //var fname = array[2].toString().toLowerCase();
                         //var lname = array[3].toString().toLowerCase();
-                        var array = barcode.split("ü");
-                        var scancode = array[0].toString().toLowerCase();
-                        alert(scancode);
+                        //var array = barcode.split("ü");
+                        //var scancode = array[0].toString().toLowerCase();
+                        //alert(scancode);
 
                        
 
 
 
-                    var dataString = {'ScanCode': scancode};
+                    var dataString = {'ScanCode': barcode};
                         $.ajax({
                             url: "https://robotaisolutions.com/BadgeScanning/interstateRestoration.php",
                             type: "post",
